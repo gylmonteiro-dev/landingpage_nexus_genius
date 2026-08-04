@@ -71,7 +71,7 @@ export default function ServicesTimeline() {
             Nossa Expertise
           </span>
           <h2 className="font-headline-lg text-headline-lg text-primary">
-            Soluções Corporativas para Educação
+            Soluções Digitais para Educação
           </h2>
         </div>
 

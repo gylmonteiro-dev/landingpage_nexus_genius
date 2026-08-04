@@ -12,7 +12,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-3xl flex flex-col gap-stack-md">
         <h1 className="font-display-lg text-display-lg text-primary">
-          Tecnologia Educacional Acessível para o Futuro do Ensino
+          Tecnologia Digital Acessível para o Presente e Futuro do Ensino
         </h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
           Capacitando instituições, secretarias e escolas com soluções tecnológicas sob medida e

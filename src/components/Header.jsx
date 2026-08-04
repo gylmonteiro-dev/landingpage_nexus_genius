@@ -1,17 +1,23 @@
+import logo from '../assets/images/brand/logo.svg'
+
 const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'Digital Implementation', href: '#digital-implementation' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'About', href: '#about' },
+  { label: 'Serviços', href: '#services' },
+  { label: 'Implementação Digital', href: '#digital-implementation' },
+  { label: 'Depoimentos', href: '#testimonials' },
+  { label: 'Sobre Nós', href: '#about' },
+  { label: 'Contato', href: '#contact' },
 ]
 
 export default function Header() {
   return (
     <header className="bg-surface-container-lowest border-b border-outline-variant sticky top-0 z-50">
       <nav className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-        <div className="font-headline-md text-headline-md font-bold text-primary tracking-tight">
-          Nexus Genius
-        </div>
+        {/* <div className="font-headline-md text-headline-md font-bold text-primary tracking-tight"> */}
+          {/* Nexus Genius */}
+        {/* </div> */}
+        <a href="#">
+        <img src={logo} alt="Nexus Genius" className="h-12 w-auto" />
+        </a>
 
         <ul className="hidden md:flex gap-8 items-center">
           {NAV_LINKS.map((link) => (
