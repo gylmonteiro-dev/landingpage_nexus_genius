@@ -2,7 +2,7 @@ import logo from '../assets/images/brand/logo.svg'
 
 const NAV_LINKS = [
   { label: 'Serviços', href: '#services' },
-  { label: 'Implementação Digital', href: '#digital-implementation' },
+  { label: 'BNCC Computação', href: '#digital-implementation' },
   { label: 'Depoimentos', href: '#testimonials' },
   { label: 'Sobre Nós', href: '#about' },
   { label: 'Contato', href: '#contact' },
