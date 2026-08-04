@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import services from '../data/services'
 import useScrollReveal from '../hooks/useScrollReveal'
 
 function ServiceRow({ title, description, image, alt, imageSide }) {
+  const [isGrayscale, setIsGrayscale] = useState(false)
+
   const textBlock = (
     <div
       className={`text-left md:pl-16 flex flex-col items-start ${
@@ -33,9 +36,12 @@ function ServiceRow({ title, description, image, alt, imageSide }) {
         }`}
       />
       <img
-        className="w-full h-80 object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded shadow-sm"
+        className={`w-full h-80 object-cover transition-all duration-500 rounded shadow-sm cursor-pointer ${
+          isGrayscale ? 'grayscale' : 'grayscale-0'
+        }`}
         alt={alt}
         src={image}
+        onClick={() => setIsGrayscale((prev) => !prev)}
       />
     </div>
   )

@@ -13,12 +13,13 @@ export default function Footer() {
             >
               info
             </span>
-            <span className="font-label-caps text-label-caps uppercase text-primary">About Us</span>
+            <span className="font-label-caps text-label-caps uppercase text-primary">Sobre Nós</span>
           </div>
           <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-            Com mais de 20 anos de experiência em tecnologia educacional, nosso time de
-            consultores, educadores e especialistas técnicos entende o que é necessário para
-            entregar soluções de impacto real para o ensino.
+          Acreditamos que a tecnologia só transforma o ensino quando acompanhada de um propósito pedagógico claro. 
+          É por isso que a Nexus Genius funde a expertise em Computação e Informática com profissionais da Educação que possuem vivência real e acadêmica com titulações como:
+          Licenciatura, especialização e mestrado. Garantindo a implementação de ferramentas digitais que resolvem desafios diários e geram 
+          resultados práticos para gestores e alunos.
           </p>
           <div className="flex gap-4 mt-4">
             <a href="#" className="text-on-surface-variant hover:text-insight-orange transition-colors">
@@ -36,12 +37,12 @@ export default function Footer() {
             <span className="font-label-caps text-label-caps uppercase text-primary">Location</span>
           </div>
           <address className="font-body-md text-body-md text-on-surface-variant not-italic leading-relaxed">
-            Av. Paulista, 1000 - Bela Vista
+            Rua Francisco Núzio de Medeiros, 34 - Dom Elizeu
             <br />
-            São Paulo, SP - 01310-100
+            Assú, RN - 59650-000
             <br />
             <a href="mailto:contato@nexusgenius.edu.br" className="text-insight-orange hover:underline">
-              contato@nexusgenius.edu.br
+            nexusgenius2026@gmail.com 
             </a>
           </address>
         </div>

@@ -5,7 +5,6 @@ const NAV_LINKS = [
   { label: 'BNCC Computação', href: '#digital-implementation' },
   { label: 'Depoimentos', href: '#testimonials' },
   { label: 'Sobre Nós', href: '#about' },
-  { label: 'Contato', href: '#contact' },
 ]
 
 export default function Header() {
@@ -37,7 +36,7 @@ export default function Header() {
             href="#quote"
             className="bg-primary text-on-primary px-6 py-2 font-button text-button rounded-lg hover:scale-[1.02] transition-transform"
           >
-            Request Quote
+            Entre em Contato
           </a>
         </div>
       </nav>
