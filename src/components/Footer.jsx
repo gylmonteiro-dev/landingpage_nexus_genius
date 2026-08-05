@@ -1,3 +1,5 @@
+import logo from '../assets/images/brand/logo.svg'
+
 export default function Footer() {
   return (
     <footer
@@ -72,7 +74,8 @@ export default function Footer() {
         <span className="font-label-caps text-label-caps text-on-surface-variant/70 uppercase">
           © {new Date().getFullYear()} Nexus Genius EdTech. Empowering Education Through Technology.
         </span>
-        <div className="font-headline-md text-primary/30 select-none">Nexus Genius</div>
+        {/* <div className="font-headline-md text-primary/30 select-none">Nexus Genius</div> */}
+        <img src={logo} alt="Nexus Genius" className="h-8 w-auto opacity-80 select-none" />
       </div>
     </footer>
   )

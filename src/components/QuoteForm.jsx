@@ -117,6 +117,7 @@ export default function QuoteForm() {
                 value={form.institutionType}
                 onChange={handleChange}
               >
+                <option>Escola Pública</option>
                 <option>Escola Privada</option>
                 <option>Secretaria de Educação</option>
                 <option>Ensino Superior</option>
