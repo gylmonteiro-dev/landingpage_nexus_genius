@@ -86,7 +86,7 @@ export default function QuoteForm() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
               <div className="flex flex-col gap-2">
                 <label className="font-label-caps text-label-caps uppercase">
-                  E-mail Corporativo *
+                  E-mail Ativo  *
                 </label>
                 <input
                   className={inputClasses}
