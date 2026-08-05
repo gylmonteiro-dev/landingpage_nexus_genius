@@ -15,17 +15,34 @@ const inputClasses =
 export default function QuoteForm() {
   const [form, setForm] = useState(initialState)
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setForm((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // TODO: wire this up to your form backend / API endpoint.
-    console.log('Solicitação de orçamento:', form)
-    setSubmitted(true)
+    setLoading(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/submit-quote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      if (!response.ok) throw new Error('Falha ao enviar')
+
+      setSubmitted(true)
+    } catch {
+      setError('Não foi possível enviar. Tente novamente.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -118,12 +135,17 @@ export default function QuoteForm() {
               />
             </div>
 
+            {error && (
+              <p className="text-center text-red-600 font-body-md">{error}</p>
+            )}
+
             <div className="text-center pt-stack-lg">
               <button
                 type="submit"
-                className="bg-primary text-on-primary px-16 py-4 font-button text-button uppercase tracking-[0.2em] hover:bg-insight-orange transition-colors duration-300"
+                disabled={loading}
+                className="bg-primary text-on-primary px-16 py-4 font-button text-button uppercase tracking-[0.2em] hover:bg-insight-orange transition-colors duration-300 disabled:opacity-60"
               >
-                Enviar Solicitação
+                {loading ? 'Enviando...' : 'Enviar Solicitação'}
               </button>
             </div>
           </form>
