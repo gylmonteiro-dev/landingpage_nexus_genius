@@ -6,7 +6,7 @@ export default function FeatureHighlight() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-headline-lg text-headline-lg mb-stack-md text-primary">
-          Educação Digital com Conformidade MEC
+          Educação Digital e Midiática em conformidade com as normas do MEC
         </h2>
         <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
           Navegar pelas regulamentações educacionais exige precisão. A Nexus Genius garante que
